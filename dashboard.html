@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard - CampusBuzz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                CampusBuzz
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <section class="dashboard-section">
+
+        <div class="dashboard-container">
+
+            <h1>Student Dashboard</h1>
+
+            <p class="welcome-text">
+                Welcome to your CampusBuzz Dashboard! 🎓
+            </p>
+
+
+            <!-- STUDENT INFORMATION -->
+            <div class="dashboard-card">
+
+                <h2>👤 Student Information</h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="dashboardName">Not available</span>
+                </p>
+
+                <p>
+                    <strong>Roll Number:</strong>
+                    <span id="dashboardRoll">Not available</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="dashboardEmail">Not available</span>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="dashboardPhone">Not available</span>
+                </p>
+
+            </div>
+
+
+            <!-- REGISTERED EVENTS -->
+            <div class="dashboard-card">
+
+                <h2>🎉 My Registered Events</h2>
+
+                <p id="registeredEventMessage">
+                    You have not registered for any event yet.
+                </p>
+
+                <div id="registeredEventsContainer"></div>
+
+                <a href="events.html" class="btn">
+                    Explore Events
+                </a>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="dashboard-card">
+
+                <h2>⚡ Quick Actions</h2>
+
+                <div class="dashboard-buttons">
+
+                    <a href="events.html" class="btn">
+                        View Events
+                    </a>
+
+                    <a href="contact.html" class="btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 CampusBuzz | College Event Management System
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
